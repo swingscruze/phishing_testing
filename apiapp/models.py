@@ -4,7 +4,7 @@ from django.db import models
 
 
 
-class user(models):
+class user(models.Model):
     username = models.CharField(max_length=25)
     surname = models.CharField(max_length=30)
     age = models.IntegerField()
